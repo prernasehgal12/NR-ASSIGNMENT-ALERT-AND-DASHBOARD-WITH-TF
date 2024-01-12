@@ -25,7 +25,7 @@ resource "newrelic_one_dashboard" "host_dashboard" {
       height = 3
 
       nrql_query {
-        query = "SELECT average(host.memoryUsedPercent) AS 'Memory used %' FROM Metric WHERE `entityGuid` = 'NDI2NzI2MHxJTkZSQXxOQXw3MjkwNTcwMDg4MjYzMDEyMTI4' TIMESERIES auto"
+        query = "SELECT average(host.memoryUsedPercent) AS 'Memory used %' FROM Metric WHERE `entityGuid` = 'NDI2NzI3M3xJTkZSQXxOQXw2Mjc0ODI0MTQzMzk2NTE4ODI0' TIMESERIES auto"
       }
     }
     widget_bar {
